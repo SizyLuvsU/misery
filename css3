@@ -1,0 +1,28 @@
+﻿@font-face {
+  font-family: 'Edu VIC WA NT Beginner';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(s/eduvicwantbeginner/v4/jiz2RF1BuW9OwcnNPxLl4KfZCHd9nFtd5Tu7stCpElYpvPfZZ-NJk_mF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(s/ibmplexmono/v19/-F6qfjptAgt5VM-kVkqdyU8n3vAO8lc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/ubuntu/v20/4iCs6KVjbNBYlgo6eA.ttf) format('truetype');
+}
