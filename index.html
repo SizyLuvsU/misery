@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall <3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        let msg1 = " | Fall <3";
+        const speed = 100;
+
+        function scrollTitle() {
+            document.title = msg1;
+            msg1 = msg1.substring(1, msg1.length) + msg1.charAt(0);
+            setTimeout(scrollTitle, speed);
+        }
+
+        scrollTitle();
+    </script>
+</head>
+<body>
+<!-- Audio element for autoplay background music -->
+<audio id="bgMusic" preload="auto" loop="true">
+    <source src="audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<div class="gradient-bg"></div>
+<div class="interaction-container">
+    <div class="typewriter" id="typewriter"></div>
+    <div class="answer-buttons">
+        <button id="yesButton" class="answer-button">Yes</button>
+        <button id="noButton" class="answer-button">No</button>
+    </div>
+</div>
+
+<div id="siteContent" class="site-content" style="display: none;">
+    <!-- Your site content goes here -->
+    <div class="container">
+        <div class="box" id="contentContainer">
+            <h1>Fall <3</h1>
+            <p>Connect with me:</p>
+            <div class="links">
+                <a href="https://discord.gg/d3d4Azbqmx">Discord</a>
+                <a href="https://github.com/lnVZ">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const typewriter = document.getElementById('typewriter');
+    const text = "Do you want to visit this site?";
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            typewriter.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 50);
+        }
+    }
+
+    typeWriter();
+
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    const bgMusic = document.getElementById('bgMusic');
+    const siteContent = document.getElementById('siteContent');
+
+yesButton.addEventListener('click', () => {
+    bgMusic.play();
+    document.body.style.overflow = 'visible';  // Show scroll bars
+    document.querySelector('.interaction-container').style.display = 'none';
+    siteContent.style.display = 'block';
+    showPopup();
+});
+
+function showPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+    setTimeout(() => {
+        popup.classList.add('fadeIn'); // Add fade in animation class
+    }, 100);
+}
+
+    noButton.addEventListener('click', () => {
+        window.location.href = 'yesorno.html'; // Replace with your desired URL
+    });
+</script>
+
+</body>
+</html>
