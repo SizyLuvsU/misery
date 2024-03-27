@@ -1,0 +1,128 @@
+Uri: https://fonts.cdnfonts.com/css/vcr-osd-mono
+File Name: C:\Downloaded Web Sites\meowing.xyz\css\vcr-osd-mono
+Content Type: text/css
+
+Uri: https://fonts.cdnfonts.com/s/14798/VCR_OSD_MONO_1.001[1].woff
+File Name: C:\Downloaded Web Sites\meowing.xyz\s\14798\VCR_OSD_MONO_1.001[1].woff
+Content Type: font/woff
+
+Uri: https://meowing.xyz/
+File Name: C:\Downloaded Web Sites\meowing.xyz\index.htm
+Content Type: text/html
+
+Uri: https://meowing.xyz/crt.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\crt.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/css/98.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\css\98.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/css/all.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\css\all.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/css/desktop.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\css\desktop.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/css/jquery-ui.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\css\jquery-ui.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/desktop.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\desktop.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/desktop.html
+File Name: C:\Downloaded Web Sites\meowing.xyz\desktop.html
+Content Type: text/html
+
+Uri: https://meowing.xyz/favicon.html
+File Name: C:\Downloaded Web Sites\meowing.xyz\favicon.html
+Content Type: text/html
+
+Uri: https://meowing.xyz/fonts/fa-duotone-900.woff2
+File Name: C:\Downloaded Web Sites\meowing.xyz\fonts\fa-duotone-900.woff2
+Content Type: font/woff2
+
+Uri: https://meowing.xyz/fonts/ms_sans_serif_bold.woff2
+File Name: C:\Downloaded Web Sites\meowing.xyz\fonts\ms_sans_serif_bold.woff2
+Content Type: font/woff2
+
+Uri: https://meowing.xyz/images/cock.gif
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\cock.gif
+Content Type: image/gif
+
+Uri: https://meowing.xyz/images/girl.jpg
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\girl.jpg
+Content Type: image/jpeg
+
+Uri: https://meowing.xyz/images/loli.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\loli.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/images/operator.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\operator.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/images/sound.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\sound.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/images/stella.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\stella.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/images/ui-icons_444444_256x240.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\ui-icons_444444_256x240.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/images/ui-icons_777620_256x240.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\ui-icons_777620_256x240.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/images/ui-icons_ffffff_256x240.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\ui-icons_ffffff_256x240.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/images/windows-0.png
+File Name: C:\Downloaded Web Sites\meowing.xyz\images\windows-0.png
+Content Type: image/png
+
+Uri: https://meowing.xyz/index.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\index.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/js/audio.js
+File Name: C:\Downloaded Web Sites\meowing.xyz\js\audio.js
+Content Type: application/javascript
+
+Uri: https://meowing.xyz/js/index.js
+File Name: C:\Downloaded Web Sites\meowing.xyz\js\index.js
+Content Type: application/javascript
+
+Uri: https://meowing.xyz/js/jquery-3.6.0.min.js
+File Name: C:\Downloaded Web Sites\meowing.xyz\js\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://meowing.xyz/js/jquery-ui.min.js
+File Name: C:\Downloaded Web Sites\meowing.xyz\js\jquery-ui.min.js
+Content Type: application/javascript
+
+Uri: https://meowing.xyz/loading.css
+File Name: C:\Downloaded Web Sites\meowing.xyz\loading.css
+Content Type: text/css
+
+Uri: https://meowing.xyz/media/audio.mp3
+File Name: C:\Downloaded Web Sites\meowing.xyz\media\audio.mp3
+Content Type: audio/mpeg
+
+Uri: https://meowing.xyz/media/audio4.mp3
+File Name: C:\Downloaded Web Sites\meowing.xyz\media\audio4.mp3
+Content Type: audio/mpeg
+
+Uri: https://meowing.xyz/pixel.apng
+File Name: C:\Downloaded Web Sites\meowing.xyz\pixel.apng
+Content Type: application/octet-stream
+
