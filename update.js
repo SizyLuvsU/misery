@@ -9,19 +9,27 @@ fetch('https://api.lanyard.rest/v1/users/917455968013520966')
     })
     .catch(error => console.error('Error fetching user data:', error));
 
-// Function to update HTML with userData
 function updateHTML(userData) {
     const profileBox = document.getElementById('profileBox');
 
-    // Extract relevant information from userData
     const username = userData.data.discord_user.username;
     const avatar = `https://cdn.discordapp.com/avatars/${userData.data.discord_user.id}/${userData.data.discord_user.avatar}.png`;
-    const status = userData.data.discord_status;
+    const activities = userData.data.activities; // Corrected the variable name to match the loop
     let game = 'Unknown';
-    let spotify = '';
-
-    // Find the first activity that is not a custom status
-    const activity = userData.data.activities.find(activity => activity.type !== 4);
+    let state = '';
+    
+    // Find the custom status
+    for (let activity of activities) {
+        if (activity.id === 'custom') {
+            state = activity.state;
+            break;
+        }
+    }
+    
+    // Find the activity that is not of type 4 (which is custom status)
+    const activity = activities.find(activity => activity.type !== 4);
+    let spotify = null;
+    
     if (activity) {
         game = activity.name;
         if (activity.type === 1 && userData.data.listening_to_spotify) {
