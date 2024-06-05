@@ -44,7 +44,7 @@ function updateHTML(userData) {
     // Populate profile box with updated data
     profileBox.querySelector('.profile-pic').src = avatar;
     profileBox.querySelector('.username').textContent = username;
-    profileBox.querySelector('.status').textContent = `Status: ${status}`;
+    profileBox.querySelector('.status').textContent = ` ${state}`;
     profileBox.querySelector('.game').textContent = `Playing: ${game}`;
 
     // Display Spotify information if available
