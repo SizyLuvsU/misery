@@ -1,0 +1,189 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #36393f; 
+  color: #dcddde; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bio-container {
+  width: 300px; 
+  background-color: #202225; 
+  border-radius: 12px; 
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  text-align: center; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.bio-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.bio-container:hover::before {
+  opacity: 1; 
+}
+
+.bio-container:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.avatar {
+  width: 120px; 
+  height: 120px; 
+  border-radius: 50%;
+  border: 4px solid #7289da; 
+  margin-bottom: 20px; 
+  transition: border-color 0.3s ease; 
+}
+
+.avatar.dnd {
+  border-color: #f04747; 
+}
+
+.avatar.online {
+  border-color: #43b581; 
+}
+
+.avatar.offline {
+  border-color: #747f8d; 
+}
+
+.avatar.idle {
+  border-color: #faa61a; 
+}
+
+.avatar.invisible {
+  border-color: #747f8d; 
+}
+
+.user-info {
+  margin-bottom: 20px; 
+}
+
+#username {
+  font-size: 20px; 
+  font-weight: bold;
+  color: #fff; 
+  margin-bottom: 5px;
+}
+
+#id {
+  color: #72767d; 
+  font-size: 14px; 
+}
+
+#activity {
+  color: #72767d; 
+  font-size: 14px; 
+  margin-top: 10px;
+}
+
+.spotify-details {
+  margin-top: 20px;
+}
+
+.album-details {
+  margin-top: 20px;
+  display: flex; 
+  align-items: center; 
+}
+
+.album-art {
+  width: 90px; 
+  height: 90px; 
+  border: 4px solid #3e3e3f60; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
+}
+
+#album-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.album-info {
+  margin-left: 10px; 
+  text-align: left; 
+}
+
+.album-title {
+  font-size: 16px; 
+  font-weight: bold;
+  color: #fff; 
+}
+
+.album-artist {
+  color: #72767d; 
+  font-size: 14px; 
+  margin-top: 3px;
+}
+
+.album-song {
+  color: #72767d; 
+  font-size: 14px; 
+  margin-top: 3px;
+}
+
+.playbar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.playbar-info {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.playbar-text {
+  color: #72767d;
+  font-size: 14px;
+}
+
+.playbar-timeline {
+  width: 100%;
+  height: 4px;
+  background-color: #3e3e3f60;
+  margin-top: 8px;
+  position: relative;
+}
+
+.playbar-progress {
+  height: 100%;
+  background-color: #ffffff; 
+  width: 0%;
+}
+
+.playbar-timestamp {
+  color: #72767d;
+  font-size: 12px;
+  margin-top: 8px;
+}
