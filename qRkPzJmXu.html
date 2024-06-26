@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="tyylit.css">
+</head>
+<body>
+  <video id="background-video" autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div id="imageContainer"></div>
+  <div class="container">
+    <div class="content">
+      <h1 id="typewriter-text" class="typewriter-text"></h1>
+    </div>
+
+    <div id="startContainer" class="start-container">
+      <p id="startText">Click me</p>
+    </div>
+  </div>
+
+  <audio id="background-audio" src="musa.mp3"></audio>
+  <audio id="newBackgroundAudio" loop>
+    <source src="bsod.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="scripti2.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const titleElement = document.querySelector('title');
+
+      function generateRandomCharacter() {
+        const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-={}[]:;"\'<>,.?/\\|';
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        return characters[randomIndex];
+      }
+
+      function animateTitle() {
+        let titleText = '';
+        const titleLength = 20; // Length of the animated title
+        for (let i = 0; i < titleLength; i++) {
+          titleText += generateRandomCharacter();
+        }
+        titleElement.innerHTML = titleText;
+        setTimeout(animateTitle, 100); // Adjust speed of animation here
+      }
+
+      animateTitle(); // Start the title animation
+    });
+  </script>
+</body>
+</html>
